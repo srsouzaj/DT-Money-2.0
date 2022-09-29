@@ -1,14 +1,23 @@
-
+import * as Dialog from "@radix-ui/react-dialog";
 import LogoIcon from "../../assets/Logo.icon";
-import { HeaderContainer, HeaderContent, NewTransactionButton } from "./styles"
+import { NewTransactionModal } from "../NewTransactionModal";
+import { HeaderContainer, HeaderContent, NewTransactionButton } from "./styles";
 
 export const Header = () => {
-    return (
-      <HeaderContainer>
-        <HeaderContent>
-          <LogoIcon />
-          <NewTransactionButton>Nova Transação</NewTransactionButton>
-        </HeaderContent>
-      </HeaderContainer>
-    );
-}
+  return (
+    <HeaderContainer>
+      <HeaderContent>
+        <LogoIcon />
+
+        <Dialog.Root>
+          <Dialog.Trigger asChild>
+            <NewTransactionButton>Nova transação</NewTransactionButton>
+          </Dialog.Trigger>
+
+          <NewTransactionModal />
+        </Dialog.Root>
+
+      </HeaderContent>
+    </HeaderContainer>
+  );
+};
