@@ -13,6 +13,7 @@ Projeto realizado durante o bootcamp "Ignite - ReactJS", promovido pela @rockets
 * Vite
 * Phosphor Icon
 * Styled Component
+* Radix-UI
 
 
 
