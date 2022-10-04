@@ -14,6 +14,8 @@ Projeto realizado durante o bootcamp "Ignite - ReactJS", promovido pela @rockets
 * Phosphor Icon
 * Styled Component
 * Radix-UI
+* Zod
+* React-hook-Form
 
 
 
