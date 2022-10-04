@@ -17,7 +17,7 @@ const { register, handleSubmit, formState: {isSubmitting} } = useForm<SearchForm
 });
 
 const handleSearchTransactions = async (data: SearchFormInputs) => {
-  await new Promise(resolve => setTimeout(resolve, 2000))
+   
   console.log(data)
 }
 
