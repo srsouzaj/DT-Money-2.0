@@ -16,6 +16,7 @@ Projeto realizado durante o bootcamp "Ignite - ReactJS", promovido pela @rockets
 * Radix-UI
 * Zod
 * React-hook-Form
+* ESLint
 
 
 

@@ -1,5 +1,5 @@
-import * as Dialog from "@radix-ui/react-dialog";
-import { ArrowCircleDown, ArrowCircleUp, X } from "phosphor-react";
+import * as Dialog from '@radix-ui/react-dialog'
+import { ArrowCircleDown, ArrowCircleUp, X } from 'phosphor-react'
 
 import {
   CloseButton,
@@ -7,26 +7,24 @@ import {
   Overlay,
   TransactionType,
   TransactionTypeButton,
-} from "./styles";
-import * as z from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { Controller, useForm } from "react-hook-form";
-import { useContext } from "react";
-import { TransactionsContext } from "../contexts/TransactionsContext";
+} from './styles'
+import * as z from 'zod'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { Controller, useForm } from 'react-hook-form'
+import { useContext } from 'react'
+import { TransactionsContext } from '../contexts/TransactionsContext'
 
 const newTransactionFormSchema = z.object({
   description: z.string(),
   price: z.number(),
   category: z.string(),
-  type: z.enum(["income", "outcome"]),
-});
+  type: z.enum(['income', 'outcome']),
+})
 
-type newTransactionFormInputs = z.infer<typeof newTransactionFormSchema>;
-
+type newTransactionFormInputs = z.infer<typeof newTransactionFormSchema>
 
 export function NewTransactionModal() {
-const { createTransaction } = useContext(TransactionsContext);
-
+  const { createTransaction } = useContext(TransactionsContext)
 
   const {
     register,
@@ -37,22 +35,21 @@ const { createTransaction } = useContext(TransactionsContext);
   } = useForm<newTransactionFormInputs>({
     resolver: zodResolver(newTransactionFormSchema),
     defaultValues: {
-      type: "income",
+      type: 'income',
     },
-  });
+  })
 
-  const handleCreateNewTransaction = async (data: newTransactionFormInputs) => {  
-    const { category, description, price, type } = data;
-      await createTransaction({
-        category,
-        description,
-        price,
-        type
-      })    
+  const handleCreateNewTransaction = async (data: newTransactionFormInputs) => {
+    const { category, description, price, type } = data
+    await createTransaction({
+      category,
+      description,
+      price,
+      type,
+    })
 
-    reset();
-  };
-
+    reset()
+  }
 
   return (
     <Dialog.Portal>
@@ -70,19 +67,19 @@ const { createTransaction } = useContext(TransactionsContext);
             type="text"
             placeholder="Descrição"
             required
-            {...register("description")}
+            {...register('description')}
           />
           <input
             type="number"
             placeholder="Preço"
             required
-            {...register("price", { valueAsNumber: true })}
+            {...register('price', { valueAsNumber: true })}
           />
           <input
             type="text"
             placeholder="Categoria"
             required
-            {...register("category")}
+            {...register('category')}
           />
 
           <Controller
@@ -103,7 +100,7 @@ const { createTransaction } = useContext(TransactionsContext);
                     Saída
                   </TransactionTypeButton>
                 </TransactionType>
-              );
+              )
             }}
           />
           <button type="submit" disabled={isSubmitting}>
@@ -112,5 +109,5 @@ const { createTransaction } = useContext(TransactionsContext);
         </form>
       </Content>
     </Dialog.Portal>
-  );
+  )
 }
