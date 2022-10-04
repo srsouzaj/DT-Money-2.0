@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 function LogoIcon() {
   return (
@@ -24,7 +24,7 @@ function LogoIcon() {
         fill="#00B37E"
       />
     </svg>
-  );
+  )
 }
 
-export default LogoIcon;
+export default LogoIcon
