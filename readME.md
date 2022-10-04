@@ -17,6 +17,8 @@ Projeto realizado durante o bootcamp "Ignite - ReactJS", promovido pela @rockets
 * Zod
 * React-hook-Form
 * ESLint
+* use Context Selector
+* Scheduler
 
 
 
