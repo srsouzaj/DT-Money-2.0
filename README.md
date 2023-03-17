@@ -4,9 +4,7 @@
 
 ## **💻** Projeto
 
-“Vamos criar uma rede social”. Todo dev já ouviu isso pelo menos uma vez na vda. Mas como será que funciona uma, como fazer uma publicação, comentar - e apagar o comentário - e até mesmo curtir?
-
-Para conclusão de módulo, a fim consolidar ainda mais meus conhecimentos sendo alinhado com as novas e melhores práticas e tecnologias disponíveis no mundo da tecnologia, realizei durante o programa de aceleração “Ignite - ReactJS”, promovido pela Rocketseat, uma aplicação Frontend chamado Ignite Feed, onde podemos treinar minhas habilidades com ReactJS, utilizando Hooks, componentes, propriedades, Imutabilidades, etc. Além disso, para estilizando foi utilizado CSS Modules.
+Para conclusão de módulo, a fim consolidar ainda mais meus conhecimentos sendo alinhado com as novas e melhores práticas e tecnologias disponíveis no mundo da tecnologia, realizei durante o programa de aceleração “Ignite - ReactJS”, promovido pela Rocketseat, uma aplicação Frontend chamado DT Money, onde podemos treinar minhas habilidades com ReactJS, utilizando Hooks, componentes, propriedades, Imutabilidades, etc. Além disso, para estilizando foi utilizado CSS Modules.
 
 <p align="center">
   <img alt="background" src=".github/background.png" />
