@@ -4,6 +4,7 @@
 
 ## **💻** Projeto
 
+Que tal um aplicativo para te auxiliar nos gastos e nos ganhos mensais? 
 Para conclusão de módulo, a fim consolidar ainda mais meus conhecimentos sendo alinhado com as novas e melhores práticas e tecnologias disponíveis no mundo da tecnologia, realizei durante o programa de aceleração “Ignite - ReactJS”, promovido pela Rocketseat, uma aplicação Frontend chamado DT Money, onde podemos treinar minhas habilidades com ReactJS, utilizando Hooks, componentes, propriedades, Imutabilidades, etc. Além disso, para estilizando foi utilizado Styled Component, lib CSS-in-JS.
 
 <p align="center">
@@ -34,16 +35,16 @@ Antes de baixar o projeto você vai precisar ter instalado na sua máquina as se
 - [NPM](https://www.npmjs.com/)
 
 ```bash
-## Clone o projeto em sua máquina
+## Clone o projeto
 git clone https://github.com/srsouzaj/dt-money.git
 
-# Acessar o projeto no terminal
+# Para acessar o projeto, digite o seguinte comando em seu terminal
 $ cd dt-money
 
 # Instalar as dependências
 $ npm install
 
-# Executar o servidor em modo de desenvolvimento
+# Para executar o projeto, digite o seguinte comando em seu terminal
 $ npm run dev
 ```
 
@@ -52,4 +53,4 @@ $ npm run dev
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/srsouzaj/igniteFeed/blob/master/LICENSE.MD) para mais detalhes.
 
 ---
-Feito por Jorge de Souza
+Feito por [Jorge de Souza](https://www.linkedin.com/in/srsouzaj/)
